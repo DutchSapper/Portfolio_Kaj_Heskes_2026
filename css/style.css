@@ -1,0 +1,67 @@
+:root {
+  /* Kleuren */
+  --primary-bg-color: #141920;
+  --primary-card-color: #1f242c;
+  --primary-color: #e6e0e0;
+  --primary-sec-color: #8b949e;
+  --primary-ac-color: #e0a80e;
+  --primary-border-color: #2a2e35;
+
+  /* Typografie */
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 2rem;
+  --text-2xl: 3rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  
+  --radius: 8px;
+  --max-width: 1100px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color); 
+
+  padding: var(--space-4);
+  margin: 0;
+  line-height: 1.6;
+
+}
+
+h1, h2, h3 {
+  font-family: var(--font-mono);
+}
+
+header {
+  position: sticky; 
+  top: 0;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul, li{
+  display: flex;
+  padding: var(--space-2);
+}
